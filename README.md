@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/hero.png" alt="Shorz MCP — 160+ video editing tools for Claude, Codex and Gemini" style="max-width:100%;height:auto;">
+<img src="assets/hero.png" alt="AI video agent — 160+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
 
-# Shorz MCP — turn Claude, Codex or Gemini into an AI video editing agent
+# AI video agent for Claude, Codex & Gemini — 160+ video editing tools via MCP
 
 **160+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download Windows desktop app that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
 
@@ -18,6 +18,8 @@
 ---
 
 ## What is this?
+
+This is **Shorz MCP** — the Model Context Protocol server that ships inside the free Shorz desktop app, turning any MCP-capable agent into an AI video editing agent.
 
 Coding agents got good. Video agents didn't — because they had no hands. Shorz gives them hands.
 
@@ -131,6 +133,8 @@ MCP exposes the tools; **agent skills teach your agent how to use them well** �
 - `references/guided-creation/` — interview-style flows that turn a vague idea into a finished spec
 
 Install from the app (**Connect AI Agent → Install skills now**) or copy the folder into your client's skill directory (`~/.claude/skills/`, `~/.cursor/skills/`, `~/.agents/skills/`, or `~/.gemini/` for Antigravity).
+
+Claude user? There's a dedicated install guide at [Vossy/claude-video-editing-skill](https://github.com/Vossy/claude-video-editing-skill).
 
 ---
 
