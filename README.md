@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/badge/app_download-free-success?style=for-the-badge" alt="Free download">
 <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows" alt="Windows">
 
-**[⬇ Download Shorz (free)](https://shorz.ai/download)** · [Tool catalog on shorz.ai](https://shorz.ai/tools/mcp) · [What's new](https://shorz.ai/updates)
+**[Get Shorz — free →](https://www.shorz.ai/)** · [Tool catalog on shorz.ai](https://shorz.ai/tools/mcp) · [What's new](https://shorz.ai/updates)
 
 </div>
 
@@ -39,7 +39,7 @@ The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows (mac
 
 ## Quickstart (60 seconds)
 
-1. **[Download Shorz](https://shorz.ai/download)** — free, no card — install and sign in.
+1. **[Get Shorz](https://www.shorz.ai/)** — free download, no card — install and sign in.
 2. Open **Connect AI Agent** in the app header. Pick your client — Shorz writes the MCP config for you with one click (Cursor, Claude Desktop, Claude Code, Codex, Antigravity) and can install the agent skills too.
 3. Restart your agent and ask it for something:
 
@@ -462,8 +462,7 @@ Straight from the server's `tools/list` — the same catalog the app documents a
 
 ## Links
 
-- **Download:** [shorz.ai/download](https://shorz.ai/download)
-- **Website:** [shorz.ai](https://shorz.ai)
+- **Shorz (what it is, and the free download):** [shorz.ai](https://www.shorz.ai/)
 - **Live tool explorer:** [shorz.ai/tools/mcp](https://shorz.ai/tools/mcp)
 - **Changelog:** [shorz.ai/updates](https://shorz.ai/updates)
 - **Support:** info@shorz.ai · X: [@shorz_app](https://x.com/shorz_app)
@@ -472,12 +471,12 @@ Straight from the server's `tools/list` — the same catalog the app documents a
 
 ## License
 
-The documentation and agent-skill files in this repository are MIT-licensed (see [LICENSE](LICENSE)). The Shorz desktop application itself is proprietary — free to download at [shorz.ai/download](https://shorz.ai/download).
+The documentation and agent-skill files in this repository are MIT-licensed (see [LICENSE](LICENSE)). The Shorz desktop application itself is proprietary — free to download at [shorz.ai](https://www.shorz.ai/).
 
 <div align="center">
 
 *Vibe create videos at the speed of ideas.*
 
-**[⬇ Get Shorz free](https://shorz.ai/download)**
+**[Get Shorz — free →](https://www.shorz.ai/)**
 
 </div>
