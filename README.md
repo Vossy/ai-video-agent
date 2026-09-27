@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="assets/hero.png" alt="AI video agent — 160+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
+<img src="assets/hero.png" alt="AI video agent — 170+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
 
-# AI video agent for Claude, Codex & Gemini — 160+ video editing tools via MCP
+# AI video agent for Claude, Codex & Gemini — 170+ video editing tools via MCP
 
-**160+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download Windows desktop app that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
+**170+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download Windows desktop app that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
 
-<img src="https://img.shields.io/badge/MCP_tools-160%2B-8b5cf6?style=for-the-badge" alt="160+ MCP tools">
-<img src="https://img.shields.io/badge/free_to_run-144%2F160_tools-739EF8?style=for-the-badge" alt="144 of 160 tools free to run">
+<img src="https://img.shields.io/badge/MCP_tools-170%2B-8b5cf6?style=for-the-badge" alt="170+ MCP tools">
+<img src="https://img.shields.io/badge/free_to_run-154%2F172_tools-739EF8?style=for-the-badge" alt="154 of 172 tools free to run">
 <img src="https://img.shields.io/badge/app_download-free-success?style=for-the-badge" alt="Free download">
 <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows" alt="Windows">
 
@@ -31,7 +31,7 @@ The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows (mac
 - **Publishing** — post or schedule to **YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads, Pinterest**
 - **Live UI control** — the agent can drive the actual app window, with a visible cursor
 
-**144 of the 160 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
+**154 of the 172 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
 
 > *Vibe create videos at the speed of ideas.*
 
@@ -129,7 +129,7 @@ MCP exposes the tools; **agent skills teach your agent how to use them well** �
 - `SKILL.md` — the operating manual for driving Shorz over MCP
 - `references/project-workflows/` — end-to-end recipes per project type
 - `references/panel-workflows/` — every panel (subtitles, B-roll, titles, borders, overlays, audio, thumbnails…)
-- `references/headless-workflows/` — loose-file editing, stock media, X research, free image generation
+- `references/headless-workflows/` — loose-file editing, stock media, GIPHY GIFs and stickers, public-domain music and sound effects, X research
 - `references/guided-creation/` — interview-style flows that turn a vague idea into a finished spec
 
 Install from the app (**Connect AI Agent → Install skills now**) or copy the folder into your client's skill directory (`~/.claude/skills/`, `~/.cursor/skills/`, `~/.agents/skills/`, or `~/.gemini/` for Antigravity).
@@ -138,7 +138,7 @@ Claude user? There's a dedicated install guide at [Vossy/claude-video-editing-sk
 
 ---
 
-## The full tool catalog — 160 tools in 16 categories
+## The full tool catalog — 172 tools in 16 categories
 
 Cost column: **Free** = runs locally or against the app bridge at no cost · *Shorz credits* = AI generation billed from your prepaid balance (the agent can price it first) · *Your own key* = optional ElevenLabs key for voice cloning.
 
@@ -147,17 +147,17 @@ Cost column: **Free** = runs locally or against the app bridge at no cost · *Sh
 | [Account & credits](#account--credits) | 7 | 7/7 |
 | [Projects & settings](#projects--settings) | 9 | 9/9 |
 | [Brief & main AI model](#brief--main-ai-model) | 3 | 3/3 |
-| [Create Video & rendering](#create-video--rendering) | 7 | 5/7 |
+| [Create Video & rendering](#create-video--rendering) | 8 | 5/8 |
 | [Panel settings](#panel-settings) | 12 | 12/12 |
 | [Avatar, podcast & reference inputs](#avatar-podcast--reference-inputs) | 16 | 16/16 |
-| [Media generation](#media-generation) | 8 | 1/8 |
-| [Headless single-file edits](#headless-single-file-edits) | 22 | 21/22 |
+| [Media generation](#media-generation) | 9 | 1/9 |
+| [Headless single-file edits](#headless-single-file-edits) | 23 | 22/23 |
 | [Assets & library](#assets--library) | 21 | 21/21 |
-| [Downloads](#downloads) | 7 | 7/7 |
+| [Downloads](#downloads) | 9 | 9/9 |
 | [Thumbnail Creator](#thumbnail-creator) | 5 | 4/5 |
 | [Animation Studio](#animation-studio) | 9 | 6/9 |
 | [Publishing & social](#publishing--social) | 18 | 17/18 |
-| [Research & stock media](#research--stock-media) | 7 | 6/7 |
+| [Research & stock media](#research--stock-media) | 14 | 13/14 |
 | [Live UI control](#live-ui-control) | 6 | 6/6 |
 | [Jobs & app state](#jobs--app-state) | 3 | 3/3 |
 
@@ -211,6 +211,7 @@ Start the same render the Create Video button starts, then watch it through to d
 | `generate_video` | Starts a render from a brief passed in the call and returns immediately — poll for status rather than blocking. | Shorz credits |
 | `get_video_generation_status` | Polls the current and most recent render: still working, finished, or failed. | **Free** |
 | `stop_video_generation` | Stops a render that is in progress. | **Free** |
+| `edit_generated_video` | Edits a finished auto-edit video from one plain-English instruction — 'cut 0:05–0:08', 'make the subtitles bigger' — and re-renders a new version with every other AI decision pinned, so nothing you didn't mention changes and existing media isn't re-billed. | Shorz credits |
 | `render_text_preview` | Renders a title or subtitle to a PNG so the agent can actually see the type before committing it to a video. | **Free** |
 | `compile_remotion_preview` | Compiles the Remotion source behind the editor preview. | **Free** |
 | `remotion_render` | Renders a Remotion composition to MP4 as a background job — bundling plus rendering can take minutes. | **Free** |
@@ -264,17 +265,18 @@ Make the footage, stills and voice you don't have — no project needed, straigh
 | Tool | What it does | Cost |
 |---|---|---|
 | `generate_images` | Generates images with model, aspect, quality and variation control — and optional face references so the same person comes back every time. | Shorz credits |
-| `generate_images_nano_banana_free` | Generates images with Google's Nano Banana 2 on the user's own Google AI Studio key: no Shorz credits at all, just that key's free quota. MCP-only — these models aren't in the app's pickers. | Your own key |
 | `generate_scene_image` | Generates a single scene still through the same stack Text-to-Video exports use — the one to pick when reference-image editing matters. | Shorz credits |
-| `generate_image_to_video` | Turns a local still into a short video clip via Veo, Seedance, Kling and friends. Minutes, not seconds. | Shorz credits |
+| `generate_image_to_video` | Turns a local still into a short video clip via Seedance, Kling and friends. Minutes, not seconds. | Shorz credits |
 | `proxy_aiml_video_generation` | Direct text-to-video and image-to-video generation through the credit proxy, for agents that want to name the model and poll it themselves. | Shorz credits |
 | `generate_tts_preview` | Speaks a line out loud as a real audio file, so a voice can be auditioned before a whole script is narrated. | Shorz credits |
+| `generate_music` | Generates an instrumental music track from a text prompt into the audio library — ElevenLabs Music when it must run an exact length (10s to 5 min), or Google Lyria 2 for cheap bed material at a length it picks itself. | Shorz credits |
+| `generate_sound_effect` | Generates one sound effect from a short physical description — a whoosh, a UI click, a riser, an impact — at the length you ask for (0.5–22s), saved as an .mp3 in the audio library. The same engine Auto SoundFX uses inside a render. | Shorz credits |
 | `list_elevenlabs_voices` | Lists the ElevenLabs voices available to the account, including cloned ones on a BYO key. | **Free** |
 | `transcribe_video_file` | Transcribes a local video or audio file to text as a background job — long footage takes minutes. | Shorz credits |
 
 ### Headless single-file edits
 
-Twenty-two edits that run on a file path with no project, no panels and no credits. Chain them by feeding each output into the next input.
+Edits that run on a file path with no project and no panels — all free and local except the one AI image edit. Chain them by feeding each output into the next input.
 
 | Tool | What it does | Cost |
 |---|---|---|
@@ -298,6 +300,7 @@ Twenty-two edits that run on a file path with no project, no panels and no credi
 | `extract_audio` | Pulls the audio track out of a video into a standalone audio file. | **Free** |
 | `replace_audio` | Swaps a video's audio track for a separate audio file. | **Free** |
 | `remove_silence` | Jump-cuts the dead air out of talking-head footage, keeping the speech either side. Only runs when explicitly asked for. | **Free** |
+| `remove_ranges` | Cuts one or more time ranges out of a video or audio file and joins what's left, frame-accurately — the manual counterpart to remove_silence. | **Free** |
 | `edit_image_with_ai` | Makes one small, localised AI edit to an image — a colour or lighting change, an arrow, a highlight — and returns a new file. The original is never touched. | Shorz credits |
 | `extract_video_frames` | Saves stills from a video as image files so the agent can actually look at the footage — evenly spaced, or at exact timestamps. | **Free** |
 
@@ -342,6 +345,8 @@ Pull source footage in from the platforms, and pull generated media down to disk
 | `download_generated_thumbnail` | Saves a generated thumbnail into the library. | **Free** |
 | `download_generated_music` | Saves a generated music track into the audio library. | **Free** |
 | `save_generated_sound_effect` | Saves a generated sound effect into the audio library. | **Free** |
+| `download_giphy_gif` | Saves a GIPHY GIF or sticker into Downloaded GIFs, ready to import as B-roll. Free. | **Free** |
+| `download_openverse_audio` | Saves a public-domain sound effect or music track from an Openverse search into the audio library. Free. | **Free** |
 
 ### Thumbnail Creator
 
@@ -351,7 +356,7 @@ Drive the thumbnail modal end to end — set it up, generate, and poll for the P
 |---|---|---|
 | `open_thumbnail_creator` | Opens the Thumbnail Creator modal, exactly as clicking it would. | **Free** |
 | `set_thumbnail_creator_settings` | Fills in the modal live — including reference images and a YouTube thumbnail to take cues from. | **Free** |
-| `thumbnail_creator_generate` | Generates thumbnails with Nano Banana or GPT Image 2 and saves the PNGs under Generated Thumbnails. | Shorz credits |
+| `thumbnail_creator_generate` | Generates thumbnails with Nano Banana or GPT Image 2.5 and saves the PNGs under Generated Thumbnails. | Shorz credits |
 | `get_thumbnail_creator_generation_status` | Lightweight poll for whether that generation has finished. | **Free** |
 | `close_thumbnail_creator` | Closes the modal. | **Free** |
 
@@ -398,7 +403,7 @@ Connect accounts, price a post before it goes out, publish or schedule to eight 
 
 ### Research & stock media
 
-Find footage and find out what's happening — without leaving the chat.
+Find footage, GIFs, stickers, music and sound effects, and find out what's happening — without leaving the chat.
 
 | Tool | What it does | Cost |
 |---|---|---|
@@ -408,6 +413,13 @@ Find footage and find out what's happening — without leaving the chat.
 | `pexels_curated_photos` | Browses Pexels' editorially curated photo feed. | **Free** |
 | `pexels_get_video` | Fetches one specific Pexels video by id. | **Free** |
 | `pexels_get_photo` | Fetches one specific Pexels photo by id. | **Free** |
+| `giphy_search_gifs` | Searches GIPHY for GIFs — reactions, memes, footage loops — with size filters and a G rating by default. Free. | **Free** |
+| `giphy_search_stickers` | Searches GIPHY stickers: transparent-background GIFs — arrows, callouts, cut-out characters — that sit on top of the video. Free. | **Free** |
+| `giphy_trending_gifs` | Browses GIPHY's trending GIFs right now, no keyword needed. Free. | **Free** |
+| `giphy_trending_stickers` | Browses GIPHY's trending stickers right now. Free. | **Free** |
+| `giphy_get_gif` | Fetches one GIF or sticker by its GIPHY id, with every rendition GIPHY has for it. Free. | **Free** |
+| `openverse_search_sound_effects` | Searches public-domain (CC0) sound effects — whooshes, impacts, risers, clicks, ambiences — usable commercially with no attribution. Free, no sign-in. | **Free** |
+| `openverse_search_music` | Searches public-domain (CC0) background music by genre — full tracks or short loops — usable commercially with no attribution. Free, no sign-in. | **Free** |
 | `x_search` | Live X/Twitter search in plain language — posts, news, people, trends and media, with handle and date filters, answered with x.com citations. | Shorz credits |
 
 ### Live UI control
@@ -438,7 +450,7 @@ The plumbing: poll long jobs, check for updates, and read the app's event log wh
 ## FAQ
 
 **Is Shorz free?**
-The download is free and 144 of the 160 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
+The download is free and 154 of the 172 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
 
 **Which AI agents work with it?**
 Anything that speaks MCP over stdio: Claude Code, Claude Desktop, Cursor, Codex, Antigravity, Gemini CLI — the app writes the config for most of these with one click.
