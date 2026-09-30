@@ -2,12 +2,12 @@
 
 <img src="assets/hero.png" alt="AI video agent — 170+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
 
-# AI video agent for Claude, Codex & Gemini — 170+ video editing tools via MCP
+# AI video agent for Claude, Codex & Gemini — 180+ video editing tools via MCP
 
 **170+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download Windows desktop app that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
 
 <img src="https://img.shields.io/badge/MCP_tools-170%2B-8b5cf6?style=for-the-badge" alt="170+ MCP tools">
-<img src="https://img.shields.io/badge/free_to_run-154%2F172_tools-739EF8?style=for-the-badge" alt="154 of 172 tools free to run">
+<img src="https://img.shields.io/badge/free_to_run-162%2F181_tools-739EF8?style=for-the-badge" alt="162 of 181 tools free to run">
 <img src="https://img.shields.io/badge/app_download-free-success?style=for-the-badge" alt="Free download">
 <img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows" alt="Windows">
 
@@ -31,7 +31,7 @@ The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows (mac
 - **Publishing** — post or schedule to **YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads, Pinterest**
 - **Live UI control** — the agent can drive the actual app window, with a visible cursor
 
-**154 of the 172 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
+**162 of the 181 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
 
 > *Vibe create videos at the speed of ideas.*
 
@@ -138,7 +138,7 @@ Claude user? There's a dedicated install guide at [Vossy/claude-video-editing-sk
 
 ---
 
-## The full tool catalog — 172 tools in 16 categories
+## The full tool catalog — 181 tools in 17 categories
 
 Cost column: **Free** = runs locally or against the app bridge at no cost · *Shorz credits* = AI generation billed from your prepaid balance (the agent can price it first) · *Your own key* = optional ElevenLabs key for voice cloning.
 
@@ -148,14 +148,15 @@ Cost column: **Free** = runs locally or against the app bridge at no cost · *Sh
 | [Projects & settings](#projects--settings) | 9 | 9/9 |
 | [Brief & main AI model](#brief--main-ai-model) | 3 | 3/3 |
 | [Create Video & rendering](#create-video--rendering) | 8 | 5/8 |
-| [Panel settings](#panel-settings) | 12 | 12/12 |
-| [Avatar, podcast & reference inputs](#avatar-podcast--reference-inputs) | 16 | 16/16 |
+| [Panel settings](#panel-settings) | 13 | 13/13 |
+| [Avatar, podcast & reference inputs](#avatar-podcast--reference-inputs) | 20 | 20/20 |
 | [Media generation](#media-generation) | 9 | 1/9 |
 | [Headless single-file edits](#headless-single-file-edits) | 23 | 22/23 |
 | [Assets & library](#assets--library) | 21 | 21/21 |
 | [Downloads](#downloads) | 9 | 9/9 |
 | [Thumbnail Creator](#thumbnail-creator) | 5 | 4/5 |
 | [Animation Studio](#animation-studio) | 9 | 6/9 |
+| [Canvas](#canvas) | 4 | 3/4 |
 | [Publishing & social](#publishing--social) | 18 | 17/18 |
 | [Research & stock media](#research--stock-media) | 14 | 13/14 |
 | [Live UI control](#live-ui-control) | 6 | 6/6 |
@@ -211,7 +212,7 @@ Start the same render the Create Video button starts, then watch it through to d
 | `generate_video` | Starts a render from a brief passed in the call and returns immediately — poll for status rather than blocking. | Shorz credits |
 | `get_video_generation_status` | Polls the current and most recent render: still working, finished, or failed. | **Free** |
 | `stop_video_generation` | Stops a render that is in progress. | **Free** |
-| `edit_generated_video` | Edits a finished auto-edit video from one plain-English instruction — 'cut 0:05–0:08', 'make the subtitles bigger' — and re-renders a new version with every other AI decision pinned, so nothing you didn't mention changes and existing media isn't re-billed. | Shorz credits |
+| `edit_generated_video` | Edits a finished Auto Edit or Text to Video video from one plain-English instruction — 'cut 0:05–0:08', 'make the subtitles bigger', 'give scene 3 a different picture' — and re-renders a new version with every other AI decision pinned, so nothing you didn't mention changes and existing media isn't re-billed. | Shorz credits |
 | `render_text_preview` | Renders a title or subtitle to a PNG so the agent can actually see the type before committing it to a video. | **Free** |
 | `compile_remotion_preview` | Compiles the Remotion source behind the editor preview. | **Free** |
 | `remotion_render` | Renders a Remotion composition to MP4 as a background job — bundling plus rendering can take minutes. | **Free** |
@@ -234,10 +235,11 @@ One tool per sidebar panel. Everything a human can toggle in Shorz, an agent can
 | `set_avatar_settings` | The Avatar panel: model, script or audio, voice, avatar image, motion instructions and up to three extra angle shots of the same avatar. | **Free** |
 | `set_podcast_settings` | The Podcast panel: script, both voices, both avatars, display style and camera motion. | **Free** |
 | `set_advertisement_settings` | The Advertisement panel: product and character images, and the total ad length in 10-second storyboard scenes (10–60s). | **Free** |
+| `set_music_video_settings` | The Music Video panel: the video and keyframe image models, the cut pace, light-leak flashes on section changes, and which part of the song becomes the video. | **Free** |
 
 ### Avatar, podcast & reference inputs
 
-The files those panels point at — avatar photos, extra angles, product shots, voice recordings and character references.
+The files those panels point at — avatar photos, extra angles, product shots, voice recordings, songs and character references.
 
 | Tool | What it does | Cost |
 |---|---|---|
@@ -257,6 +259,10 @@ The files those panels point at — avatar photos, extra angles, product shots, 
 | `delete_text_to_video_reference_image` | Removes an image from that older flat style list. | **Free** |
 | `save_text_to_video_speech_audio` | Saves a narration audio file for a Text-to-Video project, instead of generating the voice. | **Free** |
 | `delete_text_to_video_speech_audio` | Removes that saved narration audio. | **Free** |
+| `select_music_video_audio` | Sets a local song as the Music Video project's song and returns its length, which every cost estimate is based on. | **Free** |
+| `remove_music_video_audio` | Removes the Music Video project's song (your original file is never touched). | **Free** |
+| `select_music_video_character_image` | Sets an optional artist or character image, so the lead looks the same in every shot of the music video. | **Free** |
+| `remove_music_video_character_image` | Removes that artist or character image; the render then casts the video from the song and the brief. | **Free** |
 
 ### Media generation
 
@@ -376,6 +382,17 @@ Chat a motion-graphics scene into existence, compile it, and render it to MP4 �
 | `remove_animation_studio_export` | Removes one export from that list. | **Free** |
 | `clear_animation_studio_exports` | Clears the export list. | **Free** |
 
+### Canvas
+
+Build and run node-graph videos in Canvas: wire writers, images, clips, voice and music into a timeline, then render it.
+
+| Tool | What it does | Cost |
+|---|---|---|
+| `canvas_list` | Lists the user's Canvas graphs, newest first, without opening anything. | **Free** |
+| `canvas_get` | Reads one Canvas graph without opening it: every node, its settings and current result, the wires, and what each Export holds. | **Free** |
+| `canvas_build` | Creates a Canvas graph, or adds nodes and wires to one, and opens it in Shorz so the user watches it appear. Nothing runs yet. | **Free** |
+| `canvas_run` | Runs a graph and returns its exported file. Only out-of-date nodes run; a paid run first returns its itemised estimate and waits for an approved credit limit. | Shorz credits |
+
 ### Publishing & social
 
 Connect accounts, price a post before it goes out, publish or schedule to eight platforms, and read the numbers back.
@@ -445,12 +462,10 @@ The plumbing: poll long jobs, check for updates, and read the app's event log wh
 | `check_for_update` | Checks whether a newer Shorz version is out, with the release and download links. | **Free** |
 | `fetch_app_events` | The raw internal event log. For renders prefer the status tools; this is for logs and debugging. | **Free** |
 
----
-
 ## FAQ
 
 **Is Shorz free?**
-The download is free and 154 of the 172 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
+The download is free and 162 of the 181 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
 
 **Which AI agents work with it?**
 Anything that speaks MCP over stdio: Claude Code, Claude Desktop, Cursor, Codex, Antigravity, Gemini CLI — the app writes the config for most of these with one click.
