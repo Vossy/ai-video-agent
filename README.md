@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="assets/hero.png" alt="AI video agent — 170+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
+<img src="assets/hero.png" alt="AI video agent — 180+ video editing tools for Claude, Codex and Gemini via Shorz MCP" style="max-width:100%;height:auto;">
 
 # AI video agent for Claude, Codex & Gemini — 180+ video editing tools via MCP
 
-**170+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download Windows desktop app that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
+**180+ video editing tools for your AI agent, over the Model Context Protocol.** Shorz is a free-to-download desktop app for Windows and Mac (Apple Silicon) that ships a full MCP server inside the installer — connect it once and your agent can auto-edit long videos, clip a podcast into shorts, add subtitles, generate avatars and thumbnails, and schedule the result to YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads and Pinterest.
 
-<img src="https://img.shields.io/badge/MCP_tools-170%2B-8b5cf6?style=for-the-badge" alt="170+ MCP tools">
-<img src="https://img.shields.io/badge/free_to_run-162%2F181_tools-739EF8?style=for-the-badge" alt="162 of 181 tools free to run">
+<img src="https://img.shields.io/badge/MCP_tools-180%2B-8b5cf6?style=for-the-badge" alt="180+ MCP tools">
+<img src="https://img.shields.io/badge/free_to_run-168%2F187_tools-739EF8?style=for-the-badge" alt="168 of 187 tools free to run">
 <img src="https://img.shields.io/badge/app_download-free-success?style=for-the-badge" alt="Free download">
-<img src="https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows" alt="Windows">
+<img src="https://img.shields.io/badge/platform-Windows_%7C_macOS-0078D6?style=for-the-badge" alt="Windows and macOS">
 
 **[Get Shorz — free →](https://www.shorz.ai/)** · [Tool catalog on shorz.ai](https://shorz.ai/tools/mcp) · [What's new](https://shorz.ai/updates)
 
@@ -23,7 +23,7 @@ This is **Shorz MCP** — the Model Context Protocol server that ships inside th
 
 Coding agents got good. Video agents didn't — because they had no hands. Shorz gives them hands.
 
-The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows (macOS in progress). Every install includes a **standalone MCP server** — no separate package, no API keys to wire up, no subscription. Point Claude Code, Claude Desktop, Cursor, Codex or Gemini at it and the agent gets the same controls a human editor has in the app:
+The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows and Mac (Apple Silicon). Every install includes a **standalone MCP server** — no separate package, no API keys to wire up, no subscription. Point Claude Code, Claude Desktop, Cursor, Codex or Gemini at it and the agent gets the same controls a human editor has in the app:
 
 - **6 project types** — Auto Edit Video, Text-to-Video, Avatar, Podcast, Advertisement, Clipping
 - **Headless single-file edits** — trim, crop, resize, concat, speed, reverse, fades, audio extraction and more, straight on loose files with **no project needed** (these run locally and are free)
@@ -31,7 +31,7 @@ The [Shorz desktop app](https://shorz.ai) is an AI video editor for Windows (mac
 - **Publishing** — post or schedule to **YouTube, TikTok, Instagram, Facebook, X, LinkedIn, Threads, Pinterest**
 - **Live UI control** — the agent can drive the actual app window, with a visible cursor
 
-**162 of the 181 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
+**168 of the 187 tools are free to run.** The rest are AI generation tools that spend prepaid Shorz credits from your signed-in account (1 credit = €0.01, packs from €19.90, credits never expire, no subscription) — and every tool's cost is labeled in the catalog below, so your agent can check the price before spending anything. One tool (`validate_elevenlabs_api_key`) uses your own ElevenLabs key, and only if you want your own cloned voice.
 
 > *Vibe create videos at the speed of ideas.*
 
@@ -138,7 +138,7 @@ Claude user? There's a dedicated install guide at [Vossy/claude-video-editing-sk
 
 ---
 
-## The full tool catalog — 181 tools in 17 categories
+## The full tool catalog — 187 tools in 17 categories
 
 Cost column: **Free** = runs locally or against the app bridge at no cost · *Shorz credits* = AI generation billed from your prepaid balance (the agent can price it first) · *Your own key* = optional ElevenLabs key for voice cloning.
 
@@ -156,7 +156,7 @@ Cost column: **Free** = runs locally or against the app bridge at no cost · *Sh
 | [Downloads](#downloads) | 9 | 9/9 |
 | [Thumbnail Creator](#thumbnail-creator) | 5 | 4/5 |
 | [Animation Studio](#animation-studio) | 9 | 6/9 |
-| [Canvas](#canvas) | 4 | 3/4 |
+| [Canvas](#canvas) | 10 | 9/10 |
 | [Publishing & social](#publishing--social) | 18 | 17/18 |
 | [Research & stock media](#research--stock-media) | 14 | 13/14 |
 | [Live UI control](#live-ui-control) | 6 | 6/6 |
@@ -392,6 +392,12 @@ Build and run node-graph videos in Canvas: wire writers, images, clips, voice an
 | `canvas_get` | Reads one Canvas graph without opening it: every node, its settings and current result, the wires, and what each Export holds. | **Free** |
 | `canvas_build` | Creates a Canvas graph, or adds nodes and wires to one, and opens it in Shorz so the user watches it appear. Nothing runs yet. | **Free** |
 | `canvas_run` | Runs a graph and returns its exported file. Only out-of-date nodes run; a paid run first returns its itemised estimate and waits for an approved credit limit. | Shorz credits |
+| `canvas_stop` | Stops a Canvas run, like the Stop button. Generations already sent finish and are kept; the next run picks up where it stopped. | **Free** |
+| `canvas_pick_take` | Chooses which take of a node is used, like the take arrows on the node. Everything downstream re-runs from the picked take next time. | **Free** |
+| `canvas_remove` | Deletes nodes or wires from a graph, like selecting them and pressing Delete. All-or-nothing; generated files stay on disk. | **Free** |
+| `canvas_duplicate` | Copies a graph — every node, wire and take, results included — so you can branch it and only re-run what you change. | **Free** |
+| `canvas_rename` | Renames a Canvas graph without bringing Canvas on screen. | **Free** |
+| `canvas_delete` | Deletes a Canvas graph when asked: the file moves to Canvas/.trash and everything it made stays in My Assets. | **Free** |
 
 ### Publishing & social
 
@@ -465,7 +471,7 @@ The plumbing: poll long jobs, check for updates, and read the app's event log wh
 ## FAQ
 
 **Is Shorz free?**
-The download is free and 162 of the 181 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
+The download is free and 168 of the 187 MCP tools run at no cost. There's also a real free tier — Auto Edit and Clipping, 4 videos a week, no card. AI generation beyond that runs on prepaid credits (1 credit = €0.01, packs from €19.90, credits never expire). No subscription, and no watermark on anything, ever.
 
 **Which AI agents work with it?**
 Anything that speaks MCP over stdio: Claude Code, Claude Desktop, Cursor, Codex, Antigravity, Gemini CLI — the app writes the config for most of these with one click.
@@ -480,7 +486,7 @@ Yes — post now or schedule to YouTube, TikTok, Instagram, Facebook, X, LinkedI
 Leading models like Claude, GPT, Veo, Seedance, Kling, Nano Banana and ElevenLabs — the lineup is server-driven and current pricing is always visible to the agent via `get_shorz_usage_and_pricing`.
 
 **Does this work on macOS or Linux?**
-Windows today; macOS is in progress. The MCP server itself is plain Node.js, but it needs the running desktop app next to it.
+Windows and macOS (Apple Silicon Macs; Intel Macs are not supported). No Linux build. The MCP server itself is plain Node.js, but it needs the running desktop app next to it.
 
 **Where does the tool list come from?**
 Straight from the server's `tools/list` — the same catalog the app documents at [shorz.ai/tools/mcp](https://shorz.ai/tools/mcp). If a tool is in this README, it's registered in the shipped app.
